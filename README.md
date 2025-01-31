@@ -1,6 +1,8 @@
 # React + Vite
 # [see template online](https://movies-app-react-toturials.netlify.app/)
 
+![templatePNG](https://github.com/user-attachments/assets/36171b94-e58e-42da-9e94-293fa38ba21b)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
