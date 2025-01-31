@@ -57,7 +57,7 @@ function App() {
 
   }
 
-  
+
   const fetchdata = async () => {
     const url = "https://api.themoviedb.org/4/list/1";
     setIsLoading(true); // شروع بارگذاری
@@ -89,11 +89,11 @@ function App() {
     }
   }
 
-  //!=========>>> when user type anything , fetch data from server
   useEffect(() => {
     fetchdata()
   }, [])
 
+  //!=========>>> when user type anything , fetch data from server
   useEffect(() => {
     searchMovie(searchTerm)
   }, [searchTerm])
@@ -104,10 +104,10 @@ function App() {
 
   return (
     <main>
-      <div className="pattern" />
-      <div className="wrapper">
+      <div className="bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0" />
+      <div className="px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative z-10">
         <header>
-          <img src="./hero.png" alt="Hero Banner" />
+          <img src="./hero.png" alt="Hero Banner" className='object-contain text-center' />
           <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle</h1>
 
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
