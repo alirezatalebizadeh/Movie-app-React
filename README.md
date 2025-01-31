@@ -1,5 +1,6 @@
 # React + Vite
 # [see template online](https://movies-app-react-toturials.netlify.app/)
+# we use debounced to optimizing app and decrease request to server
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
