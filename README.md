@@ -3,6 +3,7 @@
 # we use (useDebounce) to optimizing app and decrease request to server
 
 ![templatePNG](https://github.com/user-attachments/assets/36171b94-e58e-42da-9e94-293fa38ba21b)
+# start => npm i then npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
