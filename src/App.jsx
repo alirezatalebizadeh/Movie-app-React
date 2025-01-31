@@ -57,6 +57,7 @@ function App() {
 
   }
 
+  
   const fetchdata = async () => {
     const url = "https://api.themoviedb.org/4/list/1";
     setIsLoading(true); // شروع بارگذاری
