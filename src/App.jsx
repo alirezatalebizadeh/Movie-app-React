@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useDebounce } from 'react-use'
 import './App.css'
 import Search from './components/search'
 import Snipper from "./components/snipper"
@@ -25,6 +26,11 @@ function App() {
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
+
+
+  //! ==> waint 500 mini second and when user is stopped then request go to server.
+  useDebounce(() => setDebouncedSearchTerm(searchTerm), 500, [searchTerm])
 
 
   const searchMovie = async (query = "") => {
@@ -95,8 +101,8 @@ function App() {
 
   //!=========>>> when user type anything , fetch data from server
   useEffect(() => {
-    searchMovie(searchTerm)
-  }, [searchTerm])
+    searchMovie(debouncedSearchTerm)
+  }, [debouncedSearchTerm])
 
 
 

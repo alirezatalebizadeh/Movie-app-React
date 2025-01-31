@@ -1,6 +1,6 @@
 # React + Vite
 # [see template online](https://movies-app-react-toturials.netlify.app/)
-# we use debounced to optimizing app and decrease request to server
+# we use (useDebounce) to optimizing app and decrease request to server
 
 ![templatePNG](https://github.com/user-attachments/assets/36171b94-e58e-42da-9e94-293fa38ba21b)
 
