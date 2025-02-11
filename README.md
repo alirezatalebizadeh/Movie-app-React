@@ -26,6 +26,7 @@
 
 1. ابتدا مخزن را کلون کنید:
 
-   ```bash
-   git clone https://github.com/your-username/your-project-name.git
+  - git clone
+  - npm install
+  - npm run dev 
 
